@@ -1,0 +1,205 @@
+:root{
+    --white-color:white;
+}
+*{
+    margin:0px;
+    padding: 0px;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: black;
+    opacity:0.4;
+    position: absolute;
+    top:0;
+    left:0;
+    
+}
+#logo{
+    margin: 6px 42px;
+    display: flex;
+    align-items: center
+}
+#logo img{
+    width: 53px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{
+    list-style: none;   
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 5px 16px;
+    color: white;
+    display: block;
+    border-radius: 15px;
+}
+#navbar ul li a:hover{
+    background-color: var(--white-color);
+    color:black;
+ }
+ #home{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 330px;
+     padding: 10px 200px;
+ }
+ #home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/Home-banner2.jpg') no-repeat center center/cover;
+    height: 400px;
+    width:100%;
+    opacity: 0.89;
+    z-index: -1;
+    top:0px;
+    left:0px;
+}
+#home .h-primary{
+    color: var(--white-color);
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px 8px;
+    text-align: center;
+}
+.btn{
+    margin: 13px;
+    background-color: #af7f7f;
+    border-radius: 10px;
+    border: 1px solid #7a6a6a;
+    padding: 7px 16px;
+    color:white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#home p{
+    font-size: 1.2rem;
+    color: var(--white-color);
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+}
+#services {
+    display: flex;
+    margin:30px 60px;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    border-radius: 28px;
+    margin: 2px 5px;
+    background-color: #f1f1f1;
+}
+#services .box img{
+    width:140px;
+    display: block;
+    margin: auto;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    padding: 12px;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+} 
+#clients-container{
+    /* margin:20px 0px; */
+    position: relative;
+}
+#clients-container::before{
+    /* margin:20px; */
+    content: "";
+    background: url("../images/handshake1.jpg") no-repeat center center/cover ;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    /* left: 0;
+    top:0; */
+    opacity: 0.8;
+    z-index:-1;
+    left: 0px;
+}
+#clients-container h1{
+    padding-top: 30px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+#clients .clients-items{
+    padding: 79px 70px;
+    padding-top: 50px;
+}
+#clients .clients-items img{
+    width:100px;
+}
+#contact-section{
+    position: relative;
+}
+#contact-section::before{
+    /* margin:20px; */
+    content: "";
+    background: url("../images/44374883-kontaktieren-sie-uns-banner.webp") no-repeat center center/cover ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* left: 0;
+    top:0; */
+    opacity: 0.8;
+    z-index:-1;
+    left: 0px;
+}
+#contact-section h1{
+    padding: 33px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    border: 1px solid grey;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-weight:bold;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box .btn{
+    display: block;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+footer{
+    height: 30px;
+    color:white;
+    padding: 16px;
+    background-color: black;
+}

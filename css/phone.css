@@ -1,0 +1,11 @@
+
+#services {
+   flex-direction: column;
+}
+#services .box img {
+    width: 170px;
+    padding: 16px;
+}
+.h-secondary {
+    font-size: 1.9rem;
+}
